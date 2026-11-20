@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="referrer" content="no-referrer">
+  <title>Curated Services &amp; Commissions — ADRITHI MEDIA | Cinematic Photography &amp; Archival Arts</title>
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Sofia+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css?v=7.0">
+  <link rel="stylesheet" href="pages.css?v=7.0">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logo_clean_crop.jpg" type="image/jpeg">
+</head>
+<body class="page-wrapper">
+
+  <!-- ========================================================================
+       TOP NAVIGATION BAR
+       ======================================================================== -->
+  <header id="siteNavbar" class="site-navbar">
+    <div class="site-navbar__inner">
+      <a href="index.html" class="site-navbar__brand" aria-label="Adrithi Media Home">
+        <img src="assets/images/adrithi_emblem_white.png" alt="Adrithi Media Emblem" class="brand-logo-img">
+        <div class="brand-text-col">
+          <span class="brand-title"><span class="brand-accent-a">A</span>DRITHI MEDI<span class="brand-accent-a">A</span></span>
+          <span class="brand-subtitle">CINEMATIC ARCHIVES</span>
+        </div>
+      </a>
+
+      <nav class="site-navbar__links" aria-label="Main Navigation">
+        <a href="index.html" class="site-nav-link">Home</a>
+        <a href="about.html" class="site-nav-link">About</a>
+        <a href="services.html" class="site-nav-link active">Services</a>
+        <a href="contact.html" class="site-nav-link">Contact</a>
+      </nav>
+
+      <div class="site-navbar__action">
+        <a href="contact.html" class="nav-inquire-btn" aria-label="Inquire Booking">
+          <span>INQUIRE</span>
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+        <button id="mobileNavToggle" class="mobile-nav-toggle" type="button" aria-label="Open Navigation Menu">
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div id="mobileNavDrawer" class="mobile-nav-drawer" aria-hidden="true" style="display: none;">
+    <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-topbar">
+        <div class="mobile-nav-brand">
+          <img src="assets/images/adrithi_emblem_white.png" alt="Adrithi Media Emblem" class="brand-logo-img mobile-brand-logo">
+          <span class="brand-name"><span class="brand-accent-a">A</span>DRITHI MEDI<span class="brand-accent-a">A</span></span>
+        </div>
+        <button id="mobileNavClose" class="mobile-nav-close" type="button" aria-label="Close Navigation Menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.2" fill="none">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-nav-menu">
+        <a href="index.html" class="mobile-nav-item">
+          <span class="nav-num">01</span>
+          <span class="nav-label">Home</span>
+          <span class="nav-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+        </a>
+        <a href="about.html" class="mobile-nav-item">
+          <span class="nav-num">02</span>
+          <span class="nav-label">About</span>
+          <span class="nav-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+        </a>
+        <a href="services.html" class="mobile-nav-item active">
+          <span class="nav-num">03</span>
+          <span class="nav-label">Services</span>
+          <span class="nav-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+        </a>
+        <a href="contact.html" class="mobile-nav-item">
+          <span class="nav-num">04</span>
+          <span class="nav-label">Contact</span>
+          <span class="nav-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+        </a>
+      </nav>
+
+      <div class="mobile-nav-footer">
+        <a href="https://wa.me/917676763936?text=Hello%20Adrithi%20Media%2C%20I%20would%20like%20to%20inquire%20about%20booking%20your%20photography%20services." 
+           target="_blank" rel="noopener noreferrer" class="mobile-nav-cta">
+          <span>CHAT ON WHATSAPP</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+        <div class="mobile-nav-socials">
+          <a href="https://www.instagram.com/adrithimedia/" target="_blank" rel="noopener noreferrer">Instagram @adrithimedia</a>
+          <span>•</span>
+          <a href="tel:+917676763936">+91 7676763936</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ========================================================================
+         HERO SECTION: SERVICES
+         ======================================================================== -->
+    <section class="page-hero">
+      <div class="page-hero__inner">
+        <div class="page-hero-meta">
+          <span>STUDIO SERVICES &amp; COMMISSIONS</span>
+        </div>
+        <h1 class="page-hero-title">Curated Photographic Services</h1>
+        <p class="page-hero-subtitle">
+          Every milestone is preserved with uncompromising artistic care and archival precision. From sacred multi-day weddings to intimate pre-wedding journeys, generational legacies, and fine-art portraits.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         STUDIO OVERVIEW BAR
+         ======================================================================== -->
+    <section class="trust-ribbon">
+      <div class="trust-ribbon__inner">
+        <div class="trust-ribbon-item">
+          <span>8 Core Commission Disciplines</span>
+        </div>
+        <span class="trust-ribbon-sep">•</span>
+        <div class="trust-ribbon-item">
+          <span>Contract-Backed Delivery Timelines</span>
+        </div>
+        <span class="trust-ribbon-sep">•</span>
+        <div class="trust-ribbon-item">
+          <span>Dual Photographer Redundancy</span>
+        </div>
+        <span class="trust-ribbon-sep">•</span>
+        <div class="trust-ribbon-item">
+          <span>Pan-India &amp; Destination Travel</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CATEGORY FILTER BAR
+         ======================================================================== -->
+    <section class="services-catalog-section" id="servicesCatalog">
+      <div class="services-filter-wrapper">
+      <div class="services-filter-bar">
+        <button type="button" class="filter-btn active" data-filter="all">All Services (8)</button>
+        <button type="button" class="filter-btn" data-filter="wedding">Weddings &amp; Muhurtham (2)</button>
+        <button type="button" class="filter-btn" data-filter="prewedding">Pre-Wedding Stories (1)</button>
+        <button type="button" class="filter-btn" data-filter="rituals">Rituals &amp; Haldi (1)</button>
+        <button type="button" class="filter-btn" data-filter="portraits">Portraits &amp; Maternity (3)</button>
+        <button type="button" class="filter-btn" data-filter="editorial">Editorial &amp; Beauty (1)</button>
+      </div>
+      </div>
+
+      <!-- Services Catalog Grid (8 Curated Disciplines) -->
+    <div class="services-catalog-grid">
+
+      <!-- Card 01: Wedding -->
+      <article class="service-card-deep" data-category="wedding">
+        <div class="service-card-media">
+          <img src="assets/services/wedding.jpg" alt="Wedding Photography & Cinematography — Adrithi Media" class="service-card-img" loading="eager" decoding="async">
+          <span class="service-tag-badge">SIGNATURE ARCHIVE</span>
+          <span class="service-number-badge">01</span>
+        </div>
+        <div class="service-card-body">
+          <h2 class="service-card-title">Wedding Cinematography &amp; Sacred Muhurtham</h2>
+          <p class="service-card-desc">
+            Complete visual documentation of your sacred nuptials, early dawn Muhurtham vows, Kanyadaan, and evening celebration with cinema prime lenses and natural light reverence.
+          </p>
+          <div class="service-deliverables-box">
+            <p class="deliverables-label">SIGNATURE DELIVERABLES</p>
+            <ul class="deliverables-list">
+              <li>4K Cinema Highlight Film</li>
+              <li>Full Muhurtham Documentary</li>
+              <li>800+ Master Graded Stills</li>
+              <li>Heirloom Lay-Flat Album</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <span class="service-crew-chip">Dual Principal Shooters • 4K Cinema</span>
+            <a href="contact.html?service=Wedding" class="service-inquire-link"><span>INQUIRE SERVICE</span><span class="btn-arrow">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 02: Pre-Wedding -->
+      <article class="service-card-deep" data-category="prewedding">
+        <div class="service-card-media">
+          <img src="assets/services/pre_wedding.jpg" alt="Pre-Wedding Cinematic Stories — Adrithi Media" class="service-card-img" loading="eager" decoding="async" decoding="async">
+          <span class="service-tag-badge">COUPLE SESSION</span>
+          <span class="service-number-badge">02</span>
+        </div>
+        <div class="service-card-body">
+          <h2 class="service-card-title">Pre-Wedding Cinematic Stories</h2>
+          <p class="service-card-desc">
+            Intimate couple sessions set against dramatic architectural palaces, misty mountain backdrops, or golden coastal tides, designed to let your natural romance unfold.
+          </p>
+          <div class="service-deliverables-box">
+            <p class="deliverables-label">SIGNATURE DELIVERABLES</p>
+            <ul class="deliverables-list">
+              <li>3-5 Min Cinematic Story Film</li>
+              <li>80+ Retouched Fine-Art Photos</li>
+              <li>Location &amp; Styling Direction</li>
+              <li>Drone Aerial Cinematography</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <span class="service-crew-chip">Full Day Destination Coverage</span>
+            <a href="contact.html?service=Pre-Wedding" class="service-inquire-link"><span>INQUIRE SERVICE</span><span class="btn-arrow">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 03: Engagement -->
+      <article class="service-card-deep" data-category="wedding">
+        <div class="service-card-media">
+          <img src="assets/services/engagement.jpg" alt="Engagement & Ring Ceremonies — Adrithi Media" class="service-card-img" loading="eager" decoding="async" decoding="async">
+          <span class="service-tag-badge">MILESTONE BEGINNINGS</span>
+          <span class="service-number-badge">03</span>
+        </div>
+        <div class="service-card-body">
+          <h2 class="service-card-title">Engagement &amp; Ring Ceremonies</h2>
+          <p class="service-card-desc">
+            Documenting the beginning of your official wedding celebrations—capturing joyous ring exchanges, blessings from elders, and glowing couple portraits.
+          </p>
+          <div class="service-deliverables-box">
+            <p class="deliverables-label">SIGNATURE DELIVERABLES</p>
+            <ul class="deliverables-list">
+              <li>Ceremony Highlight Reel</li>
+              <li>350+ Color-Graded Stills</li>
+              <li>Same-Week Preview Highlights</li>
+              <li>Private Cloud Gallery Access</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <span class="service-crew-chip">Half-Day &amp; Full-Day Coverage</span>
+            <a href="contact.html?service=Engagement" class="service-inquire-link"><span>INQUIRE SERVICE</span><span class="btn-arrow">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 04: Haldi & Mehendi -->
+      <article class="service-card-deep" data-category="rituals">
+        <div class="service-card-media">
+          <img src="assets/services/haldi.jpg" alt="Haldi, Mehendi & Festive Celebrations — Adrithi Media" class="service-card-img" loading="eager" decoding="async" decoding="async">
+          <span class="service-tag-badge">FESTIVE CELEBRATIONS</span>
+          <span class="service-number-badge">04</span>
+        </div>
+        <div class="service-card-body">
+          <h2 class="service-card-title">Haldi, Mehendi &amp; Festive Celebrations</h2>
+          <p class="service-card-desc">
+            Capturing the exuberant energy, joyful flower showers, turmeric splashes, and soulful musical evenings with quick reflexes and vibrant, true-to-life tones.
+          </p>
+          <div class="service-deliverables-box">
+            <p class="deliverables-label">SIGNATURE DELIVERABLES</p>
+            <ul class="deliverables-list">
+              <li>High-Energy Musical Reel</li>
+              <li>400+ Unscripted Candid Stills</li>
+              <li>Slow-Motion Visual Highlights</li>
+              <li>High-Fidelity Audio Mastering</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <span class="service-crew-chip">Multi-Event Celebration Scope</span>
+            <a href="contact.html?service=Haldi" class="service-inquire-link"><span>INQUIRE SERVICE</span><span class="btn-arrow">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 05: Maternity -->
+      <article class="service-card-deep" data-category="portraits">
+        <div class="service-card-media">
+          <img src="assets/services/maternity.jpg" alt="Maternity & Motherhood Photography — Adrithi Media" class="service-card-img" loading="eager" decoding="async" decoding="async">
+          <span class="service-tag-badge">MATERNAL PORTRAITURE</span>
+          <span class="service-number-badge">05</span>
+        </div>
+        <div class="service-card-body">
+          <h2 class="service-card-title">Maternity &amp; Expectant Grace</h2>
+          <p class="service-card-desc">
+            Gentle, sculpturally lit portraits honoring the beauty of expectant motherhood. Crafted with serene pacing and bespoke indoor or golden-hour outdoor settings.
+          </p>
+          <div class="service-deliverables-box">
+            <p class="deliverables-label">SIGNATURE DELIVERABLES</p>
+            <ul class="deliverables-list">
+              <li>45+ Master Fine-Art Stills</li>
+              <li>Wardrobe &amp; Draping Guidance</li>
+              <li>Partner &amp; Sibling Inclusion</li>
+              <li>Museum Cotton Print Proofs</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <span class="service-crew-chip">Studio &amp; Scenic Outdoor</span>
+            <a href="contact.html?service=Maternity" class="service-inquire-link"><span>INQUIRE SERVICE</span><span class="btn-arrow">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 06: Family Portrait -->
+      <article class="service-card-deep" data-category="portraits">
+        <div class="service-card-media">
+          <img src="assets/services/family_portrait.jpg" alt="Family Heritage Portraits — Adrithi Media" class="service-card-img" loading="eager" decoding="async" decoding="async">
+          <span class="service-tag-badge">FAMILY HERITAGE</span>
+          <span class="service-number-badge">06</span>
+        </div>
+        <div class="service-card-body">
+          <h2 class="service-card-title">Family &amp; Generational Heritage Portraits</h2>
+          <p class="service-card-desc">
+            Bringing grandparents, parents, and grandchildren together for timeless group portraiture that celebrates your family ancestry and lifelong bonds.
+          </p>
+          <div class="service-deliverables-box">
+            <p class="deliverables-label">SIGNATURE DELIVERABLES</p>
+            <ul class="deliverables-list">
+              <li>60+ Hand-Curated Stills</li>
+              <li>High-Res Archival Digital Files</li>
+              <li>Custom Framing Consultation</li>
+              <li>10-Year Cloud Archive Guarantee</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <span class="service-crew-chip">In-Home &amp; Estate Sessions</span>
+            <a href="contact.html?service=Family" class="service-inquire-link"><span>INQUIRE SERVICE</span><span class="btn-arrow">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 07: Baby -->
+      <article class="service-card-deep" data-category="portraits">
+        <div class="service-card-media">
+          <img src="assets/services/baby.jpg" alt="Baby Milestones & Newborn Photography — Adrithi Media" class="service-card-img" loading="eager" decoding="async" decoding="async">
+          <span class="service-tag-badge">FIRST MILESTONES</span>
+          <span class="service-number-badge">07</span>
+        </div>
+        <div class="service-card-body">
+          <h2 class="service-card-title">Newborn &amp; Baby Milestones</h2>
+          <p class="service-card-desc">
+            Patient, gentle documentation of your baby's earliest days, naming ceremonies, and first-year smiles without artificial props or harsh flashes.
+          </p>
+          <div class="service-deliverables-box">
+            <p class="deliverables-label">SIGNATURE DELIVERABLES</p>
+            <ul class="deliverables-list">
+              <li>50+ Gentle Natural Light Stills</li>
+              <li>Custom Hardcover Keepsake Book</li>
+              <li>Sanitized &amp; Temperature-Safe Session</li>
+              <li>Private Family Sharing Link</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <span class="service-crew-chip">Sanitized Studio Session</span>
+            <a href="contact.html?service=Baby" class="service-inquire-link"><span>INQUIRE SERVICE</span><span class="btn-arrow">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 08: Makeup & Editorial -->
+      <article class="service-card-deep" data-category="editorial">
+        <div class="service-card-media">
+          <img src="assets/services/makeup.jpg" alt="Bridal Makeup & Editorial Artistry — Adrithi Media" class="service-card-img" loading="eager" decoding="async" decoding="async">
+          <span class="service-tag-badge">EDITORIAL BEAUTY</span>
+          <span class="service-number-badge">08</span>
+        </div>
+        <div class="service-card-body">
+          <h2 class="service-card-title">Bridal Makeup &amp; Editorial Artistry</h2>
+          <p class="service-card-desc">
+            Macro-level beauty photography capturing intricate bridal jewelry, traditional South Indian flower braids, and flawless makeup artistry under calibrated studio lighting.
+          </p>
+          <div class="service-deliverables-box">
+            <p class="deliverables-label">SIGNATURE DELIVERABLES</p>
+            <ul class="deliverables-list">
+              <li>Macro Beauty Stills (30+)</li>
+              <li>4K Slow-Motion Detail Reel</li>
+              <li>Magazine-Quality Retouching</li>
+              <li>Editorial Styling Presentation</li>
+            </ul>
+          </div>
+          <div class="service-card-footer">
+            <span class="service-crew-chip">Bridal &amp; Stylist Portfolios</span>
+            <a href="contact.html?service=Editorial" class="service-inquire-link"><span>INQUIRE SERVICE</span><span class="btn-arrow">↗</span></a>
+          </div>
+        </div>
+      </article>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         FREQUENTLY ASKED QUESTIONS
+         ======================================================================== -->
+    <section class="faq-section">
+      <div class="section-container">
+        <div class="section-header-centered">
+          <p class="section-eyebrow">COMMON INQUIRIES</p>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Clear answers on reservation lead times, ritual schedules, destination logistics, and archival delivery.</p>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item active">
+            <button class="faq-question" type="button">
+              <span>How far in advance should we reserve our wedding dates?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Due to our limited commission philosophy, popular auspicious Muhurtham dates often book 6 to 12 months in advance. We suggest inquiring as soon as your dates and venue locations are finalized.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Do you travel for destination weddings across India and abroad?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. We regularly document celebrations across Karnataka, Tamil Nadu, Kerala, Rajasthan, Goa, and international destinations. Travel and logistics are handled transparently as part of your custom proposal.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>What is your turnaround time for film and photo delivery?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>We deliver an initial curated preview of 30 to 50 retouched photographs within 5 days of your wedding. Your complete master-graded photo gallery is delivered in 4 weeks, followed by your cinematic films and handcrafted albums within 8 to 10 weeks.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Can we tailor our coverage across multiple rituals and days?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Every Indian wedding has its own cadence. We customize coverage hours, crew configurations, and deliverables to seamlessly match your specific itinerary, whether it is an intimate one-day ceremony or a 4-day grand festival.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Do you provide raw footage and unedited photographs?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>All delivered images undergo individual color calibration and cropping to represent our studio's artistic standards. Full uncut documentary video recordings of your Muhurtham and speeches are included in our Signature and Destination collections, and high-capacity raw hard drives can be arranged upon request.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CALL TO ACTION BANNER
+         ======================================================================== -->
+    <section class="page-cta-banner">
+      <h2 class="cta-headline">Let's craft your story into timeless art.</h2>
+      <p class="cta-subtext">We accept a strictly limited number of commissions each season to ensure uncompromising dedication to every celebration.</p>
+      <div class="cta-button-group">
+        <a href="about.html" class="btn-secondary-luxury">ABOUT THE STUDIO</a>
+        <a href="contact.html" class="btn-primary-luxury">BEGIN AN INQUIRY</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer id="siteFooter" class="site-footer" role="contentinfo">
+    <div class="footer-main">
+      <div class="footer-main__inner">
+        <!-- Column 1: Brand & Philosophy -->
+        <div class="footer-col footer-col--brand">
+          <div class="footer-brand-header">
+            <img src="assets/images/adrithi_emblem_white.png" alt="Adrithi Media Emblem" class="footer-brand-emblem">
+            <div class="footer-brand-titles">
+              <span class="footer-brand-title">ADRITHI MEDIA</span>
+              <span class="footer-brand-tag">CINEMATIC ARCHIVES</span>
+            </div>
+          </div>
+          <p class="footer-brand-desc">
+            A boutique visual archive and fine-art studio documenting authentic love stories, heritage weddings, and generational milestones with editorial reverence.
+          </p>
+          <div class="footer-brand-meta">
+            <span class="meta-tag">EST. 2020</span>
+            <span class="meta-divider">•</span>
+            <span class="meta-tag">BENGALURU, INDIA</span>
+            <span class="meta-divider">•</span>
+            <span class="meta-tag">WORLDWIDE</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation Links -->
+        <div class="footer-col footer-col--nav">
+          <h4 class="footer-col-title">NAVIGATION</h4>
+          <ul class="footer-link-list">
+            <li><a href="index.html" class="footer-nav-link">Home Gallery</a></li>
+            <li><a href="about.html" class="footer-nav-link">About The Studio</a></li>
+            <li><a href="services.html" class="footer-nav-link">Our Services</a></li>
+            <li><a href="contact.html" class="footer-nav-link">Contact &amp; Inquire</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Archival Services -->
+        <div class="footer-col footer-col--services">
+          <h4 class="footer-col-title">ARCHIVAL SERVICES</h4>
+          <ul class="footer-link-list">
+            <li><a href="services.html" class="footer-nav-link">Wedding Cinematography</a></li>
+            <li><a href="services.html" class="footer-nav-link">Pre-Wedding Stories</a></li>
+            <li><a href="services.html" class="footer-nav-link">Haldi &amp; Mehendi</a></li>
+            <li><a href="services.html" class="footer-nav-link">Maternity &amp; Family</a></li>
+            <li><a href="services.html" class="footer-nav-link">Editorial Portraits</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Studio Inquiries -->
+        <div class="footer-col footer-col--contact">
+          <h4 class="footer-col-title">STUDIO INQUIRIES</h4>
+          <div class="footer-contact-details">
+            <div class="footer-contact-row">
+              <span class="footer-detail-label">DIRECT PHONE:</span>
+              <a href="tel:+917676763936" class="footer-detail-val">+91 7676763936</a>
+            </div>
+            <div class="footer-contact-row">
+              <span class="footer-detail-label">STUDIO BASE:</span>
+              <span class="footer-detail-val">Bengaluru, Karnataka, India</span>
+            </div>
+            <div class="footer-contact-row">
+              <span class="footer-detail-label">DESTINATIONS:</span>
+              <span class="footer-detail-val">Pan-India &amp; International</span>
+            </div>
+          </div>
+
+          <div class="footer-social-row">
+            <a href="https://www.instagram.com/adrithimedia/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span>INSTAGRAM</span>
+            </a>
+            <a href="https://wa.me/917676763936" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.69C7.02 10.9 7.9 12.07 8.02 12.23C8.15 12.4 9.74 14.85 12.18 15.9C14.21 16.78 14.62 16.61 15.07 16.57C15.52 16.53 16.52 15.98 16.73 15.39C16.94 14.81 16.94 14.31 16.88 14.2C16.82 14.1 16.66 14.04 16.41 13.92C16.16 13.8 14.94 13.2 14.71 13.12C14.48 13.04 14.32 13 14.15 13.25C13.98 13.5 13.51 14.1 13.37 14.26C13.23 14.42 13.09 14.44 12.84 14.32C12.59 14.2 11.78 13.93 10.82 13.07C10.07 12.4 9.56 11.58 9.42 11.33C9.27 11.08 9.4 10.95 9.53 10.83C9.64 10.72 9.78 10.54 9.9 10.4C10.03 10.26 10.07 10.15 10.15 9.99C10.23 9.82 10.19 9.68 10.13 9.56C10.07 9.43 9.6 8.27 9.4 7.79C9.21 7.33 9.02 7.39 8.87 7.38C8.73 7.38 8.57 7.38 8.53 7.33Z"/>
+              </svg>
+              <span>WHATSAPP</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Colophon Copyright Bar -->
+    <div class="footer-colophon">
+      <div class="footer-colophon__inner">
+        <p class="footer-copy">© 2026 ADRITHI MEDIA. ALL RIGHTS RESERVED.</p>
+        <button type="button" class="footer-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Scroll back to top">
+          <span>BACK TO TOP</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="pages.js?v=6.3"></script>
+
+  <!-- Floating WhatsApp Concierge Button -->
+  <a href="https://wa.me/917676763936?text=Hello%20Adrithi%20Media%2C%20I%20would%20like%20to%20inquire%20about%20booking%20your%20photography%20and%20cinematography%20services." 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="whatsapp-float-btn" 
+     aria-label="Chat with Adrithi Media on WhatsApp">
+    <span class="whatsapp-float-tooltip">Chat with Studio</span>
+    <div class="whatsapp-float-icon">
+      <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.69C7.02 10.9 7.9 12.07 8.02 12.23C8.15 12.4 9.74 14.85 12.18 15.9C14.21 16.78 14.62 16.61 15.07 16.57C15.52 16.53 16.52 15.98 16.73 15.39C16.94 14.81 16.94 14.31 16.88 14.2C16.82 14.1 16.66 14.04 16.41 13.92C16.16 13.8 14.94 13.2 14.71 13.12C14.48 13.04 14.32 13 14.15 13.25C13.98 13.5 13.51 14.1 13.37 14.26C13.23 14.42 13.09 14.44 12.84 14.32C12.59 14.2 11.78 13.93 10.82 13.07C10.07 12.4 9.56 11.58 9.42 11.33C9.27 11.08 9.4 10.95 9.53 10.83C9.64 10.72 9.78 10.54 9.9 10.4C10.03 10.26 10.07 10.15 10.15 9.99C10.23 9.82 10.19 9.68 10.13 9.56C10.07 9.43 9.6 8.27 9.4 7.79C9.21 7.33 9.02 7.39 8.87 7.38C8.73 7.38 8.57 7.38 8.53 7.33Z"/>
+      </svg>
+    </div>
+    <div class="whatsapp-pulse-ring"></div>
+  </a>
+
+</body>
+</html>

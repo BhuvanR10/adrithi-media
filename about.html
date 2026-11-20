@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="referrer" content="no-referrer">
+  <title>About The Studio — ADRITHI MEDIA | Cinematic Photography & Archival Arts</title>
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Sofia+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css?v=7.0">
+  <link rel="stylesheet" href="pages.css?v=7.0">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logo_clean_crop.jpg" type="image/jpeg">
+</head>
+<body class="page-wrapper">
+
+  <!-- ========================================================================
+       TOP NAVIGATION BAR
+       ======================================================================== -->
+  <header id="siteNavbar" class="site-navbar">
+    <div class="site-navbar__inner">
+      <a href="index.html" class="site-navbar__brand" aria-label="Adrithi Media Home">
+        <img src="assets/images/adrithi_emblem_white.png" alt="Adrithi Media Emblem" class="brand-logo-img">
+        <div class="brand-text-col">
+          <span class="brand-title"><span class="brand-accent-a">A</span>DRITHI MEDI<span class="brand-accent-a">A</span></span>
+          <span class="brand-subtitle">CINEMATIC ARCHIVES</span>
+        </div>
+      </a>
+
+      <nav class="site-navbar__links" aria-label="Main Navigation">
+        <a href="index.html" class="site-nav-link">Home</a>
+        <a href="about.html" class="site-nav-link active">About</a>
+        <a href="services.html" class="site-nav-link">Services</a>
+        <a href="contact.html" class="site-nav-link">Contact</a>
+      </nav>
+
+      <div class="site-navbar__action">
+        <a href="contact.html" class="nav-inquire-btn" aria-label="Inquire Booking">
+          <span>INQUIRE</span>
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+        <button id="mobileNavToggle" class="mobile-nav-toggle" type="button" aria-label="Open Navigation Menu">
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div id="mobileNavDrawer" class="mobile-nav-drawer" aria-hidden="true" style="display: none;">
+    <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-topbar">
+        <div class="mobile-nav-brand">
+          <img src="assets/images/adrithi_emblem_white.png" alt="Adrithi Media Emblem" class="brand-logo-img mobile-brand-logo">
+          <span class="brand-name"><span class="brand-accent-a">A</span>DRITHI MEDI<span class="brand-accent-a">A</span></span>
+        </div>
+        <button id="mobileNavClose" class="mobile-nav-close" type="button" aria-label="Close Navigation Menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.2" fill="none">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-nav-menu">
+        <a href="index.html" class="mobile-nav-item">
+          <span class="nav-num">01</span>
+          <span class="nav-label">Home</span>
+          <span class="nav-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+        </a>
+        <a href="about.html" class="mobile-nav-item active">
+          <span class="nav-num">02</span>
+          <span class="nav-label">About</span>
+          <span class="nav-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+        </a>
+        <a href="services.html" class="mobile-nav-item">
+          <span class="nav-num">03</span>
+          <span class="nav-label">Services</span>
+          <span class="nav-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+        </a>
+        <a href="contact.html" class="mobile-nav-item">
+          <span class="nav-num">04</span>
+          <span class="nav-label">Contact</span>
+          <span class="nav-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+        </a>
+      </nav>
+
+      <div class="mobile-nav-footer">
+        <a href="https://wa.me/917676763936?text=Hello%20Adrithi%20Media%2C%20I%20would%20like%20to%20inquire%20about%20booking%20your%20photography%20services." 
+           target="_blank" rel="noopener noreferrer" class="mobile-nav-cta">
+          <span>CHAT ON WHATSAPP</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+        <div class="mobile-nav-socials">
+          <a href="https://www.instagram.com/adrithimedia/" target="_blank" rel="noopener noreferrer">Instagram @adrithimedia</a>
+          <span>•</span>
+          <a href="tel:+917676763936">+91 7676763936</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ========================================================================
+         SECTION 1: THE STUDIO VISION & MANIFESTO
+         ======================================================================== -->
+    <section class="page-hero">
+      <div class="page-hero__inner">
+        <div class="page-hero-meta">
+          <span>ABOUT THE STUDIO</span>
+        </div>
+        <h1 class="page-hero-title">Preserving Stories with Honesty, Reverence, and Art.</h1>
+        <p class="page-hero-subtitle">
+          Adrithi Media is an independent photography and cinematography studio based in Bengaluru. We document sacred weddings, intimate ceremonies, and generational legacies across India and worldwide.
+        </p>
+      </div>
+    </section>
+
+    <section class="about-manifesto-section">
+      <div class="about-manifesto-grid" style="padding-top: 56px;">
+        <div class="manifesto-text-col">
+          <h2 class="manifesto-lead">We chase the felt over the rehearsed, the sacred over the theatrical.</h2>
+          <p class="manifesto-body">
+            True celebration is never about manufactured drama or rigid, choreographed posing. It lives in the fleeting, unscripted truths: the quiet exchange between partners before entering the mandap, a tear held back during Kanyadaan, the celebratory burst of yellow petals in Haldi laughter, and the sacred reverence of vows spoken around the holy fire.
+          </p>
+          <p class="manifesto-body">
+            Founded in Bengaluru, our studio brings together cinema-grade optical sensors and meticulous in-house color grading. Every frame is treated as an irreplaceable family historical record, curated with patience and deep cultural reverence.
+          </p>
+
+          <div class="manifesto-stats">
+            <div class="stat-item">
+              <span class="stat-number">350+</span>
+              <span class="stat-label">Weddings Documented</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">06+</span>
+              <span class="stat-label">Years of Artistry</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">In-House Color Grading</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="manifesto-media-col">
+          <div class="manifesto-media-wrapper">
+            <img src="assets/services/candids.jpg" alt="Documentary Wedding Archive — Adrithi Media" class="manifesto-media-img" loading="eager">
+          </div>
+          <p class="manifesto-caption">Documentary Wedding Archive — Bengaluru</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 2: CREATIVE PRINCIPLES
+         ======================================================================== -->
+    <section class="principles-section">
+      <div class="section-container">
+        <div class="section-header-centered">
+          <p class="section-eyebrow">OUR PHILOSOPHY</p>
+          <h2 class="section-title">The Documentary Approach</h2>
+          <p class="section-subtitle">How our observational methodology honors the natural sanctity of your celebration.</p>
+        </div>
+
+        <div class="principles-grid">
+          <div class="principle-card">
+            <span class="principle-number">01</span>
+            <h3 class="principle-title">Unobtrusive Presence</h3>
+            <p class="principle-desc">
+              We work quietly from within the celebration, blending into the atmosphere so rituals flow uninterrupted. No scripted posing or artificial interruptions during key Muhurtham moments.
+            </p>
+          </div>
+
+          <div class="principle-card">
+            <span class="principle-number">02</span>
+            <h3 class="principle-title">Authentic Light &amp; Color</h3>
+            <p class="principle-desc">
+              We honor the natural atmosphere of your venue using high-speed prime optics rather than harsh direct flashes. Every image is color-calibrated to preserve authentic skin complexions and traditional silks.
+            </p>
+          </div>
+
+          <div class="principle-card">
+            <span class="principle-number">03</span>
+            <h3 class="principle-title">Enduring Physical Craft</h3>
+            <p class="principle-desc">
+              A photograph reaches its true purpose when held in hands. We curate handcrafted lay-flat albums printed on museum-grade cotton rag paper, tested to preserve clarity and tone for generations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 3: HEIRLOOM ARCHIVAL CRAFT & INVITATION
+         ======================================================================== -->
+    <section class="albums-craft-section">
+      <div class="albums-craft-grid">
+        <div class="albums-craft-media">
+          <div class="manifesto-media-wrapper">
+            <img src="assets/images/wedding_rings.jpg" alt="Heirloom Archival Craft — Couple Holding Gold Wedding Rings" class="manifesto-media-img" loading="lazy">
+          </div>
+          <p class="manifesto-caption">Heirloom Archival Craft — Fine Art Paper &amp; Leather</p>
+        </div>
+
+        <div class="albums-craft-content">
+          <p class="section-eyebrow">PHYSICAL ARCHIVAL PRESERVATION</p>
+          <h2 class="section-title">Heirloom Lay-Flat Albums</h2>
+          <p class="manifesto-body">
+            Screens fade, digital drives corrupt, and cloud links expire. A handcrafted physical wedding book is a tangible heirloom that gathers your children and grandchildren around its pages decades from now.
+          </p>
+
+          <div class="albums-features-list">
+            <div class="album-feature-item">
+              <h4>180° Lay-Flat Panoramic Binding</h4>
+              <p>Spreads open completely flat with zero image loss across the center crease, allowing grand mandap moments to stretch across two full pages.</p>
+            </div>
+
+            <div class="album-feature-item">
+              <h4>Museum Cotton Rag Paper</h4>
+              <p>Archival fine-art paper certified for 100+ years of color stability without yellowing or fading over time.</p>
+            </div>
+
+            <div class="album-feature-item">
+              <h4>Full-Grain Leather &amp; Linen Covers</h4>
+              <p>Hand-bound in genuine Italian leather or archival Belgian linen, debossed with custom typography and initials.</p>
+            </div>
+          </div>
+
+          <div class="albums-cta-actions">
+            <a href="contact.html" class="albums-btn-primary">
+              <span>BEGIN AN INQUIRY</span>
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+            <a href="services.html" class="albums-btn-secondary">
+              <span>EXPLORE SERVICES</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER: EDITORIAL ARCHITECTURAL COLOPHON
+       ======================================================================== -->
+  <footer id="siteFooter" class="site-footer" role="contentinfo">
+    <div class="footer-main">
+      <div class="footer-main__inner">
+        <!-- Column 1: Brand & Philosophy -->
+        <div class="footer-col footer-col--brand">
+          <div class="footer-brand-header">
+            <img src="assets/images/adrithi_emblem_white.png" alt="Adrithi Media Emblem" class="footer-brand-emblem">
+            <div class="footer-brand-titles">
+              <span class="footer-brand-title">ADRITHI MEDIA</span>
+              <span class="footer-brand-tag">CINEMATIC ARCHIVES</span>
+            </div>
+          </div>
+          <p class="footer-brand-desc">
+            A boutique visual archive and fine-art studio documenting authentic love stories, heritage weddings, and generational milestones with editorial reverence.
+          </p>
+          <div class="footer-brand-meta">
+            <span class="meta-tag">EST. 2020</span>
+            <span class="meta-divider">•</span>
+            <span class="meta-tag">BENGALURU, INDIA</span>
+            <span class="meta-divider">•</span>
+            <span class="meta-tag">WORLDWIDE</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation Links -->
+        <div class="footer-col footer-col--nav">
+          <h4 class="footer-col-title">NAVIGATION</h4>
+          <ul class="footer-link-list">
+            <li><a href="index.html" class="footer-nav-link">Home Gallery</a></li>
+            <li><a href="about.html" class="footer-nav-link">About The Studio</a></li>
+            <li><a href="services.html" class="footer-nav-link">Our Services</a></li>
+            <li><a href="contact.html" class="footer-nav-link">Contact &amp; Inquire</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Archival Services -->
+        <div class="footer-col footer-col--services">
+          <h4 class="footer-col-title">ARCHIVAL SERVICES</h4>
+          <ul class="footer-link-list">
+            <li><a href="services.html" class="footer-nav-link">Wedding Cinematography</a></li>
+            <li><a href="services.html" class="footer-nav-link">Pre-Wedding Stories</a></li>
+            <li><a href="services.html" class="footer-nav-link">Haldi &amp; Mehendi</a></li>
+            <li><a href="services.html" class="footer-nav-link">Maternity &amp; Family</a></li>
+            <li><a href="services.html" class="footer-nav-link">Editorial Portraits</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Studio Inquiries -->
+        <div class="footer-col footer-col--contact">
+          <h4 class="footer-col-title">STUDIO INQUIRIES</h4>
+          <div class="footer-contact-details">
+            <div class="footer-contact-row">
+              <span class="footer-detail-label">DIRECT PHONE:</span>
+              <a href="tel:+917676763936" class="footer-detail-val">+91 7676763936</a>
+            </div>
+            <div class="footer-contact-row">
+              <span class="footer-detail-label">STUDIO BASE:</span>
+              <span class="footer-detail-val">Bengaluru, Karnataka, India</span>
+            </div>
+            <div class="footer-contact-row">
+              <span class="footer-detail-label">DESTINATIONS:</span>
+              <span class="footer-detail-val">Pan-India &amp; International</span>
+            </div>
+          </div>
+
+          <div class="footer-social-row">
+            <a href="https://www.instagram.com/adrithimedia/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span>INSTAGRAM</span>
+            </a>
+            <a href="https://wa.me/917676763936" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.69C7.02 10.9 7.9 12.07 8.02 12.23C8.15 12.4 9.74 14.85 12.18 15.9C14.21 16.78 14.62 16.61 15.07 16.57C15.52 16.53 16.52 15.98 16.73 15.39C16.94 14.81 16.94 14.31 16.88 14.2C16.82 14.1 16.66 14.04 16.41 13.92C16.16 13.8 14.94 13.2 14.71 13.12C14.48 13.04 14.32 13 14.15 13.25C13.98 13.5 13.51 14.1 13.37 14.26C13.23 14.42 13.09 14.44 12.84 14.32C12.59 14.2 11.78 13.93 10.82 13.07C10.07 12.4 9.56 11.58 9.42 11.33C9.27 11.08 9.4 10.95 9.53 10.83C9.64 10.72 9.78 10.54 9.9 10.4C10.03 10.26 10.07 10.15 10.15 9.99C10.23 9.82 10.19 9.68 10.13 9.56C10.07 9.43 9.6 8.27 9.4 7.79C9.21 7.33 9.02 7.39 8.87 7.38C8.73 7.38 8.57 7.38 8.53 7.33Z"/>
+              </svg>
+              <span>WHATSAPP</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Colophon Copyright Bar -->
+    <div class="footer-colophon">
+      <div class="footer-colophon__inner">
+        <p class="footer-copy">© 2026 ADRITHI MEDIA. ALL RIGHTS RESERVED.</p>
+        <button type="button" class="footer-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Scroll back to top">
+          <span>BACK TO TOP</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="pages.js?v=6.3"></script>
+
+  <!-- Floating WhatsApp Concierge Button -->
+  <a href="https://wa.me/917676763936?text=Hello%20Adrithi%20Media%2C%20I%20would%20like%20to%20inquire%20about%20booking%20your%20photography%20and%20cinematography%20services." 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="whatsapp-float-btn" 
+     aria-label="Chat with Adrithi Media on WhatsApp">
+    <span class="whatsapp-float-tooltip">Chat with Studio</span>
+    <div class="whatsapp-float-icon">
+      <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.69C7.02 10.9 7.9 12.07 8.02 12.23C8.15 12.4 9.74 14.85 12.18 15.9C14.21 16.78 14.62 16.61 15.07 16.57C15.52 16.53 16.52 15.98 16.73 15.39C16.94 14.81 16.94 14.31 16.88 14.2C16.82 14.1 16.66 14.04 16.41 13.92C16.16 13.8 14.94 13.2 14.71 13.12C14.48 13.04 14.32 13 14.15 13.25C13.98 13.5 13.51 14.1 13.37 14.26C13.23 14.42 13.09 14.44 12.84 14.32C12.59 14.2 11.78 13.93 10.82 13.07C10.07 12.4 9.56 11.58 9.42 11.33C9.27 11.08 9.4 10.95 9.53 10.83C9.64 10.72 9.78 10.54 9.9 10.4C10.03 10.26 10.07 10.15 10.15 9.99C10.23 9.82 10.19 9.68 10.13 9.56C10.07 9.43 9.6 8.27 9.4 7.79C9.21 7.33 9.02 7.39 8.87 7.38C8.73 7.38 8.57 7.38 8.53 7.33Z"/>
+      </svg>
+    </div>
+    <div class="whatsapp-pulse-ring"></div>
+  </a>
+
+</body>
+</html>

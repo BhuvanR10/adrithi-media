@@ -1,0 +1,7 @@
+.vercel
+node_modules
+scripts
+.temp*
+*.log
+thesr_*
+test_drive_img.jpg

@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="referrer" content="no-referrer">
+  <title>ADRITHI MEDIA — Cinematic Photography & Archival Services</title>
+  
+  <!-- Typography: Sofia Pro / Sofia Sans (Headings), Karla (Subtitle, Paragraph, Buttons), Syne (Hero Title) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Sofia+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css?v=7.0">
+  
+  <!-- Zero-Latency High Priority Image Preloads -->
+  <!-- 1. Split Logo Vectors for Preloader -->
+  <link rel="preload" as="image" href="assets/images/logo_vector_left.png" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/logo_vector_right.png" fetchpriority="high">
+
+  <!-- 2. Brand Emblems -->
+  <link rel="preload" as="image" href="assets/images/adrithi_emblem_white.png" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/adrithi_emblem_white.png" fetchpriority="high">
+
+  <!-- 3. Primary Reelmark Curved Carousel Photos -->
+  <link rel="preload" as="image" href="assets/images/wedding_sleeve1.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/hero_main.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/haldi_sleeve3.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/tradition_sleeve4.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/services/muslims.jpg" fetchpriority="high">
+
+  <!-- 4. Curated Services Section Cards (Eager Preload) -->
+  <link rel="preload" as="image" href="assets/services/pre_wedding.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/services/wedding.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/services/engagement.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/services/maternity.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/services/family_portrait.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/wedding_rings.jpg" fetchpriority="high">
+
+  <!-- 5. DNS Preconnect & Prefetch for Google Cloud CDN Image Archives -->
+  <link rel="preconnect" href="https://lh3.googleusercontent.com" crossorigin>
+  <link rel="dns-prefetch" href="https://lh3.googleusercontent.com">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logo_clean_crop.jpg" type="image/jpeg">
+</head>
+<body>
+
+  <!-- ========================================================================
+       PRELOADER: DIVIDING WHITE PANELS WITH SPLIT LOGO
+       Opens in 2s to DIRECTLY reveal the curved carousel hero behind it
+       ======================================================================== -->
+  <div id="preloaderOverlay" class="preloader-overlay">
+    
+    <!-- Left Panel with Left Logo Half -->
+    <div class="preloader-panel preloader-panel-left" id="panelLeft">
+      <div class="panel-half-wrapper panel-half-left">
+        <img src="assets/images/logo_vector_left.png" alt="Adrithi Logo Left Half" class="logo-half-img">
+      </div>
+    </div>
+    
+    <!-- Right Panel with Right Logo Half -->
+    <div class="preloader-panel preloader-panel-right" id="panelRight">
+      <div class="panel-half-wrapper panel-half-right">
+        <img src="assets/images/logo_vector_right.png" alt="Adrithi Logo Right Half" class="logo-half-img">
+      </div>
+    </div>
+    
+    <!-- Center Seam Line Guide -->
+    <div class="preloader-seam-guide" id="portalSeam"></div>
+    
+    <!-- Accent Dots Traveling to Opposite Corners -->
+    <div class="preloader-accent-dot accent-dot-amber" id="accentDotAmber"></div>
+    <div class="preloader-accent-dot accent-dot-teal" id="accentDotTeal"></div>
+    
+  </div>
+
+  <!-- ========================================================================
+       TOP NAVIGATION BAR
+       ======================================================================== -->
+  <header id="siteNavbar" class="site-navbar">
+    <div class="site-navbar__inner">
+      <!-- Brand Logo / Wordmark -->
+      <a href="index.html" class="site-navbar__brand" aria-label="Adrithi Media Home">
+        <img src="assets/images/adrithi_emblem_white.png" alt="Adrithi Media Emblem" class="brand-logo-img">
+        <div class="brand-text-col">
+          <span class="brand-title"><span class="brand-accent-a">A</span>DRITHI MEDI<span class="brand-accent-a">A</span></span>
+          <span class="brand-subtitle">CINEMATIC ARCHIVES</span>
+        </div>
+      </a>
+
+      <!-- Center Navigation Links -->
+      <nav class="site-navbar__links" aria-label="Main Navigation">
+        <a href="index.html" class="site-nav-link active">Home</a>
+        <a href="about.html" class="site-nav-link">About</a>
+        <a href="services.html" class="site-nav-link">Services</a>
+        <a href="contact.html" class="site-nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Button & Mobile Menu Toggle Button -->
+      <div class="site-navbar__action">
+        <a href="contact.html" class="nav-inquire-btn" aria-label="Inquire Booking">
+          <span>INQUIRE</span>
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+        <button id="mobileNavToggle" class="mobile-nav-toggle" type="button" aria-label="Open Navigation Menu">
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Full-screen Architectural Mobile Navigation Overlay -->
+  <div id="mobileNavDrawer" class="mobile-nav-drawer" aria-hidden="true" style="display: none;">
+    <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-topbar">
+        <div class="mobile-nav-brand">
+          <img src="assets/images/adrithi_emblem_white.png" alt="Adrithi Media Emblem" class="brand-logo-img mobile-brand-logo">
+          <span class="brand-name"><span class="brand-accent-a">A</span>DRITHI MEDI<span class="brand-accent-a">A</span></span>
+        </div>
+        <button id="mobileNavClose" class="mobile-nav-close" type="button" aria-label="Close Navigation Menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.2" fill="none">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-nav-menu">
+        <a href="index.html" class="mobile-nav-item">
+          <span class="nav-num">01</span>
+          <span class="nav-label">Home</span>
+          <span class="nav-arrow">→</span>
+        </a>
+        <a href="about.html" class="mobile-nav-item">
+          <span class="nav-num">02</span>
+          <span class="nav-label">About</span>
+          <span class="nav-arrow">→</span>
+        </a>
+        <a href="services.html" class="mobile-nav-item">
+          <span class="nav-num">03</span>
+          <span class="nav-label">Services</span>
+          <span class="nav-arrow">→</span>
+        </a>
+        <a href="contact.html" class="mobile-nav-item">
+          <span class="nav-num">04</span>
+          <span class="nav-label">Contact</span>
+          <span class="nav-arrow">→</span>
+        </a>
+      </nav>
+
+      <div class="mobile-nav-footer">
+        <a href="https://wa.me/917676763936?text=Hello%20Adrithi%20Media%2C%20I%20would%20like%20to%20inquire%20about%20booking%20your%20photography%20services." 
+           target="_blank" rel="noopener noreferrer" class="mobile-nav-cta">
+          <span>CHAT ON WHATSAPP</span>
+          <span>↗</span>
+        </a>
+        <div class="mobile-nav-socials">
+          <a href="https://www.instagram.com/adrithimedia/" target="_blank" rel="noopener noreferrer">Instagram @adrithimedia</a>
+          <span>•</span>
+          <a href="tel:+917676763936">+91 7676763936</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       SECTION 1: REELMARK CURVED ARCHED CAROUSEL HERO
+       ======================================================================== -->
+  <section id="heroSection" class="hero-viewport">
+    <!-- Hero Brand Statement Banner -->
+    <div class="hero-header-banner">
+      <h1 class="hero-stylish-tagline">Stories Told Between the Frames</h1>
+      <p class="hero-subtitle">Authentic emotion captured through a cinematic lens</p>
+    </div>
+
+    <div class="hero-frame-container" id="frameContainer">
+      <svg 
+        id="carouselSvg" 
+        class="carousel-svg-stage" 
+        viewBox="0 0 1440 1080" 
+        preserveAspectRatio="xMidYMid meet"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <!-- Clip paths for each of the 10 curved cards -->
+        <defs id="cardDefs"></defs>
+        
+        <!-- Background subtle studio aura (Pure White) -->
+        <radialGradient id="heroBgGlow" cx="50%" cy="50%" r="60%">
+          <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#FFFFFF" stop-opacity="1"/>
+        </radialGradient>
+        <rect width="1440" height="1080" fill="url(#heroBgGlow)" />
+        
+        <!-- Group containing all 10 curved photo cards -->
+        <g id="cardsGroup" class="cards-render-group"></g>
+      </svg>
+    </div>
+
+    <!-- Mobile 3D Cinematic Coverflow Stage (Active on Mobile <= 768px) -->
+    <div class="mobile-coverflow-stage" id="mobileCoverflowStage" aria-label="Featured Photography Reel">
+      <div class="mobile-coverflow-track" id="mobileCoverflowTrack">
+        <div class="mobile-coverflow-card" data-index="0">
+          <img src="assets/images/wedding_sleeve1.jpg" alt="Cinematic Wedding Ritual" loading="eager" decoding="async">
+        </div>
+        <div class="mobile-coverflow-card" data-index="1">
+          <img src="assets/images/hero_main.webp" alt="Editorial Bride & Groom Portrait" loading="eager" decoding="async">
+        </div>
+        <div class="mobile-coverflow-card" data-index="2">
+          <img src="assets/images/haldi_sleeve3.jpg" alt="Vibrant Haldi Ceremony" loading="eager" decoding="async">
+        </div>
+        <div class="mobile-coverflow-card" data-index="3">
+          <img src="assets/images/tradition_sleeve4.jpg" alt="Sacred South Indian Traditions" loading="eager" decoding="async">
+        </div>
+        <div class="mobile-coverflow-card" data-index="4">
+          <img src="assets/services/maternity.jpg" alt="Timeless Maternity Portrait" loading="lazy" decoding="async">
+        </div>
+        <div class="mobile-coverflow-card" data-index="5">
+          <img src="assets/services/muslims.jpg" alt="Nikah Wedding Archive" loading="lazy" decoding="async">
+        </div>
+        <div class="mobile-coverflow-card" data-index="6">
+          <img src="assets/images/traditional_couple.jpg" alt="Royal Wedding Couple" loading="lazy" decoding="async">
+        </div>
+        <div class="mobile-coverflow-card" data-index="7">
+          <img src="assets/images/haldi_candid.jpg" alt="Joyous Haldi Candid Moment" loading="lazy" decoding="async">
+        </div>
+        <div class="mobile-coverflow-card" data-index="8">
+          <img src="assets/images/monsoon_story.jpg" alt="Cinematic Monsoon Wedding" loading="lazy" decoding="async">
+        </div>
+        <div class="mobile-coverflow-card" data-index="9">
+          <img src="assets/services/family_portrait.jpg" alt="Heirloom Family Portrait" loading="lazy" decoding="async">
+        </div>
+      </div>
+      <!-- Mobile Pagination Indicators -->
+      <div class="mobile-coverflow-pagination" id="mobileCoverflowPagination" aria-label="Carousel Pagination"></div>
+    </div>
+
+    <!-- Hero Carousel Navigation (Both Desktop & Mobile) -->
+    <div class="hero-carousel-nav" id="heroCarouselNav" aria-label="Hero Carousel Navigation">
+      <button class="hero-nav-btn hero-nav-prev" id="heroNavPrev" aria-label="Previous Slide">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <div class="hero-counter-display">
+        <span class="hero-counter-current" id="heroCounterCurrent">01</span>
+        <span class="hero-counter-sep">/</span>
+        <span class="hero-counter-total" id="heroCounterTotal">10</span>
+      </div>
+      <button class="hero-nav-btn hero-nav-next" id="heroNavNext" aria-label="Next Slide">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Scroll Down Hint to About -->
+    <a href="#aboutSection" class="hero-scroll-cue" aria-label="Scroll to About Section">
+      <span class="cue-label">ABOUT</span>
+      <span class="cue-arrow">↓</span>
+    </a>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 2: ABOUT SECTION — THE SR PICTURES 3D CARD ANIMATION SYSTEM
+       Grand frosted 3D card with mouse-follow perspective tilt, specular glare,
+       scroll-driven rotating star emblem, and 3D companion cards.
+       ======================================================================== -->
+  <section id="aboutSection" class="about-section">
+    <div class="about-backdrop-aura"></div>
+    
+    <div class="about-stage-wrapper">
+      
+      <!-- Eyebrow Meta -->
+      <div class="about-header-meta">
+        <div class="about-eyebrow">
+          <span>THE STUDIO &amp; VISION</span>
+        </div>
+      </div>
+
+      <!-- Grand 3D Tilt Card Container -->
+      <div class="about-card-container" id="aboutCardContainer">
+        
+        <div class="about-content-block">
+          <!-- Specular Glare Follower Overlay -->
+          <div class="about-card-glare" id="aboutCardGlare"></div>
+
+          <!-- Rotating Star Emblem (Scroll & Tilt Reactive) -->
+          <div class="about-star-icon-wrap">
+            <img src="assets/images/star_icon.svg" alt="Adrithi Media Star Icon" class="about-star-icon" id="aboutStarIcon">
+          </div>
+
+          <!-- Statement & Vision -->
+          <div class="about-text-container">
+            <h2 class="about-statement">
+              We don’t just take photographs.<br>
+              We preserve the weight of moments.
+            </h2>
+            <p class="about-subtext">
+              Adrithi Media is a cinematic photography studio rooted in authentic storytelling. We work across weddings, pre-weddings, haldi ceremonies, and intimate family portraits, always chasing the real over the posed, the felt over the rehearsed.
+            </p>
+          </div>
+
+          <!-- Social Connect Pushes -->
+          <div class="about-social-wrapper">
+            <a href="https://www.instagram.com/adrithimedia/" target="_blank" rel="noopener noreferrer" class="about-social-pill" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://wa.me/917676763936?text=Hello%20Adrithi%20Media%2C%20I%20would%20like%20to%20inquire%20about%20booking%20your%20photography%20services." target="_blank" rel="noopener noreferrer" class="about-social-pill" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.782.814 2.791.814 3.18 0 5.765-2.587 5.766-5.766 0-3.18-2.586-5.766-5.766-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.761 0-3.411-.458-4.85-1.258l-5.15 1.349 1.373-5.018c-.88-1.488-1.373-3.218-1.373-5.073 0-5.517 4.482-10 10-10 5.518 0 10 4.483 10 10z"/></svg>
+            </a>
+            <a href="tel:+917676763936" class="about-social-pill" aria-label="Phone Call">
+              <svg viewBox="0 0 24 24"><path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.4-1.1-.6-2.3-.6-3.5 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM19 12h2c0-4.97-4.03-9-9-9v2c3.87 0 7 3.13 7 7zm-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3z"/></svg>
+            </a>
+          </div>
+
+          <!-- Action CTA Pill Button -->
+          <a href="about.html" class="about-cta-btn">
+            <span>DISCOVER THE STUDIO</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 2: 3D BOOK SERVICES GALLERY (17 PAGES: COVER + 16 CATEGORIES)
+       ======================================================================== -->
+    <!-- ========================================================================
+       SECTION 2: OUR SERVICES — HORIZONTAL SCROLL GALLERY PINNED BY GSAP
+       Vertical scroll locks and content slides horizontally across 6 core services
+       ======================================================================== -->
+    <section id="servicesSection" class="services-artsy-section">
+    <div class="services-artsy-container">
+      
+      <!-- Section Header -->
+      <div class="services-artsy-header">
+        <p class="services-artsy-eyebrow">WHAT WE DO</p>
+        <h2 class="services-artsy-headline">We show up for every moment that matters.</h2>
+      </div>
+
+      <!-- 6 Portrait Tiles Grid (3 columns desktop, 2 tablet, 1 mobile) -->
+      <div class="services-artsy-grid">
+
+        <!-- Tile 01: Pre-Wedding -->
+        <article class="artsy-tile" data-category="Pre-Wedding" tabindex="0" role="button" aria-label="Pre-Wedding Gallery">
+          <div class="artsy-tile-media">
+            <img src="assets/services/pre_wedding.jpg" alt="Pre-Wedding Photography" class="artsy-tile-img" loading="lazy" decoding="async">
+          </div>
+          <div class="artsy-tile-caption">
+            <span class="artsy-tile-number">01</span>
+            <h3 class="artsy-tile-title">Pre-Wedding</h3>
+          </div>
+        </article>
+
+        <!-- Tile 02: Wedding -->
+        <article class="artsy-tile" data-category="Wedding" tabindex="0" role="button" aria-label="Wedding Gallery">
+          <div class="artsy-tile-media">
+            <img src="assets/services/wedding.jpg" alt="Wedding Photography" class="artsy-tile-img" loading="lazy" decoding="async">
+          </div>
+          <div class="artsy-tile-caption">
+            <span class="artsy-tile-number">02</span>
+            <h3 class="artsy-tile-title">Wedding</h3>
+          </div>
+        </article>
+
+        <!-- Tile 03: Engagement -->
+        <article class="artsy-tile" data-category="Engagement" tabindex="0" role="button" aria-label="Engagement Gallery">
+          <div class="artsy-tile-media">
+            <img src="assets/services/engagement.jpg" alt="Engagement Photography" class="artsy-tile-img" loading="lazy" decoding="async">
+          </div>
+          <div class="artsy-tile-caption">
+            <span class="artsy-tile-number">03</span>
+            <h3 class="artsy-tile-title">Engagement</h3>
+          </div>
+        </article>
+
+        <!-- Tile 04: Maternity -->
+        <article class="artsy-tile" data-category="Maternity" tabindex="0" role="button" aria-label="Maternity Gallery">
+          <div class="artsy-tile-media">
+            <img src="assets/services/maternity.jpg" alt="Maternity Photography" class="artsy-tile-img" loading="lazy" decoding="async">
+          </div>
+          <div class="artsy-tile-caption">
+            <span class="artsy-tile-number">04</span>
+            <h3 class="artsy-tile-title">Maternity</h3>
+          </div>
+        </article>
+
+        <!-- Tile 05: Portrait -->
+        <article class="artsy-tile" data-category="Portrait" tabindex="0" role="button" aria-label="Portrait Gallery">
+          <div class="artsy-tile-media">
+            <img src="assets/services/family_portrait.jpg" alt="Portrait Photography" class="artsy-tile-img" loading="lazy" decoding="async">
+          </div>
+          <div class="artsy-tile-caption">
+            <span class="artsy-tile-number">05</span>
+            <h3 class="artsy-tile-title">Portrait</h3>
+          </div>
+        </article>
+
+        <!-- Tile 06: Makeup -->
+        <article class="artsy-tile" data-category="Makeup" tabindex="0" role="button" aria-label="Makeup Gallery">
+          <div class="artsy-tile-media">
+            <img src="assets/services/makeup.jpg" alt="Makeup Artistry" class="artsy-tile-img" loading="lazy" decoding="async">
+          </div>
+          <div class="artsy-tile-caption">
+            <span class="artsy-tile-number">06</span>
+            <h3 class="artsy-tile-title">Makeup</h3>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Bottom Action Button: All Services -->
+      <div class="services-artsy-footer">
+        <a href="services.html" class="artsy-btn-primary">
+          <span>ALL SERVICES &amp; PACKAGES</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+<!-- ========================================================================
+       SECTION 3: CONTACT SECTION (Vertical Sliced Kinetic Gallery)
+       ======================================================================== -->
+  <!-- ========================================================================
+       SECTION 3: CONTACT & FAQ SPLIT SECTION (FAQ Left, Art Showcase Right)
+       ======================================================================== -->
+  <section id="contactSection" class="contact-section">
+    <div class="contact-split-container">
+      
+      <!-- LEFT SIDE: FAQ ACCORDION -->
+      <div class="contact-faq-col">
+        <div class="contact-faq-header">
+          <span class="contact-faq-eyebrow">COMMON INQUIRIES</span>
+          <h3 class="contact-faq-title">Frequently Asked Questions</h3>
+          <p class="contact-faq-subtitle">Clear answers on reservation lead times, ritual schedules, destination logistics, and archival delivery.</p>
+        </div>
+
+        <div class="contact-faq-accordion" id="homeFaqAccordion">
+          <!-- FAQ Item 1 (Open by default) -->
+          <div class="contact-faq-item active">
+            <button type="button" class="contact-faq-question" aria-expanded="true">
+              <span>How far in advance should we reserve our wedding dates?</span>
+              <svg class="contact-faq-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="contact-faq-answer">
+              <p>Due to our limited commission philosophy, popular auspicious Muhurtham dates often book 6 to 12 months in advance. We suggest inquiring as soon as your dates and venue locations are finalized.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="contact-faq-item">
+            <button type="button" class="contact-faq-question" aria-expanded="false">
+              <span>Do you travel for destination weddings across India and abroad?</span>
+              <svg class="contact-faq-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="contact-faq-answer">
+              <p>Yes, absolutely. While our primary studio is based in Bengaluru, we regularly travel across South India (Chennai, Hyderabad, Mysore, Coorg, Kerala, Goa) as well as national and international destination venues. Travel and stay logistics are billed transparently at actuals.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="contact-faq-item">
+            <button type="button" class="contact-faq-question" aria-expanded="false">
+              <span>What is your turnaround time for film and photo delivery?</span>
+              <svg class="contact-faq-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="contact-faq-answer">
+              <p>A curated teaser set of 25–40 high-resolution photos is delivered within 5 days for social sharing. The full color-graded digital gallery is delivered within 4–6 weeks, and custom heirloom albums are shipped within 8 weeks.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="contact-faq-item">
+            <button type="button" class="contact-faq-question" aria-expanded="false">
+              <span>Can we tailor our coverage across multiple rituals and days?</span>
+              <svg class="contact-faq-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="contact-faq-answer">
+              <p>Every family celebration is unique. We tailor custom multi-day schedules covering everything from pre-wedding shoots, Haldi, Mehendi, Varapooja, Muhurtham, and Reception.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="contact-faq-item">
+            <button type="button" class="contact-faq-question" aria-expanded="false">
+              <span>How does your crew redundancy and equipment backup work?</span>
+              <svg class="contact-faq-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="contact-faq-answer">
+              <p>We operate with full commercial redundancy. Every commission has designated standby senior cinematographers and duplicate camera bodies and lenses on-site, ensuring zero disruption under any circumstance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE: "THIS" - SHOWCASE CARD WITH RING BG & HEADLINE -->
+      <div class="contact-cta-col">
+        <div class="contact-showcase-card">
+          <!-- Still Ring Background Image -->
+          <div class="contact-still-bg">
+            <img src="assets/images/wedding_rings.jpg" alt="South Indian Wedding Couple Holding Gold Rings" class="contact-still-bg-img" loading="lazy">
+          </div>
+
+          <!-- Dark Editorial Atmosphere Overlay -->
+          <div class="contact-overlay"></div>
+
+          <!-- Center Stage Content -->
+          <div class="contact-content-card">
+            <span class="contact-eyebrow">BESPOKE ARCHIVAL COMMISSIONS</span>
+            <h2 class="contact-headline">Let's craft your story into timeless art.</h2>
+            <p class="contact-subtext">We accept a strictly limited number of commissions each season to ensure uncompromising dedication to your family heirloom.</p>
+
+            <!-- Social Media & Contact Links -->
+            <div class="contact-socials-bar">
+              <a href="contact.html" class="contact-social-item" aria-label="Book Bespoke Inquiry">
+                <span>BOOK INQUIRY →</span>
+              </a>
+
+              <span class="social-divider">•</span>
+
+              <a href="https://www.instagram.com/adrithimedia/" target="_blank" rel="noopener noreferrer" class="contact-social-item" aria-label="Instagram @adrithimedia">
+                <svg class="social-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <span>@adrithimedia</span>
+              </a>
+
+              <span class="social-divider">•</span>
+
+              <a href="tel:+917676763936" class="contact-social-item" aria-label="Call +91 7676763936">
+                <svg class="social-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>+91 7676763936</span>
+              </a>
+            </div>
+
+            <div class="contact-concierge-pill">
+              <span class="pulse-indicator"></span>
+              <span>Bengaluru Studio Showroom • 2026/2027 Calendar Open</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER: EDITORIAL ARCHITECTURAL COLOPHON & DIRECTORY
+       ======================================================================== -->
+  <footer id="siteFooter" class="site-footer" role="contentinfo">
+    <!-- Top Highlight Callout Banner -->
+    <div class="footer-banner">
+      <div class="footer-banner__inner">
+        <div class="footer-banner__text">
+          <span class="footer-eyebrow">BESPOKE ARCHIVAL COMMISSIONS</span>
+          <h3 class="footer-banner__headline">Preserve your story with cinematic dignity.</h3>
+          <p class="footer-banner__sub">Capturing timeless weddings, intimate portraits, and bespoke visual archives worldwide.</p>
+        </div>
+        <div class="footer-banner__cta">
+          <a href="https://wa.me/917676763936?text=Hello%20Adrithi%20Media%2C%20I%20would%20like%20to%20inquire%20about%20booking%20your%20photography%20services." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="footer-cta-btn"
+             aria-label="Inquire via WhatsApp">
+            <span>INQUIRE VIA WHATSAPP</span>
+            <span class="footer-cta-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Footer Directory (4 Columns) -->
+    <div class="footer-main">
+      <div class="footer-main__inner">
+        
+        <!-- Column 1: Brand & Philosophy -->
+        <div class="footer-col footer-col--brand">
+          <div class="footer-brand-header">
+            <img src="assets/images/adrithi_emblem_white.png" alt="Adrithi Media Emblem" class="footer-brand-emblem">
+            <div class="footer-brand-titles">
+              <span class="footer-brand-title">ADRITHI MEDIA</span>
+              <span class="footer-brand-tag">CINEMATIC ARCHIVES</span>
+            </div>
+          </div>
+          <p class="footer-brand-desc">
+            A boutique visual archive and fine-art studio documenting authentic love stories, heritage weddings, and generational milestones with editorial reverence.
+          </p>
+          <div class="footer-brand-meta">
+            <span class="meta-tag">EST. 2020</span>
+            <span class="meta-divider">•</span>
+            <span class="meta-tag">BENGALURU, INDIA</span>
+            <span class="meta-divider">•</span>
+            <span class="meta-tag">WORLDWIDE</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation Links -->
+        <div class="footer-col footer-col--nav">
+          <h4 class="footer-col-title">NAVIGATION</h4>
+          <ul class="footer-link-list">
+            <li><a href="index.html" class="footer-nav-link">Home Gallery</a></li>
+            <li><a href="about.html" class="footer-nav-link">About The Studio</a></li>
+            <li><a href="services.html" class="footer-nav-link">Our Services</a></li>
+            <li><a href="contact.html" class="footer-nav-link">Contact &amp; Inquire</a></li>
+            <li><button type="button" class="footer-nav-link footer-legal-trigger" data-legal="terms">Terms & Conditions</button></li>
+            <li><button type="button" class="footer-nav-link footer-legal-trigger" data-legal="privacy">Privacy Policy</button></li>
+            <li><button type="button" class="footer-nav-link footer-legal-trigger" data-legal="cookies">Cookies Permission</button></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Archival Services & Portfolios -->
+        <div class="footer-col footer-col--services">
+          <h4 class="footer-col-title">ARCHIVAL SERVICES</h4>
+          <ul class="footer-link-list">
+            <li><button type="button" class="footer-service-btn" data-category="Pre-Wedding">Pre-Wedding</button></li>
+            <li><button type="button" class="footer-service-btn" data-category="Wedding">Wedding</button></li>
+            <li><button type="button" class="footer-service-btn" data-category="Engagement">Engagement</button></li>
+            <li><button type="button" class="footer-service-btn" data-category="Maternity">Maternity</button></li>
+            <li><button type="button" class="footer-service-btn" data-category="Portrait">Portrait</button></li>
+            <li><button type="button" class="footer-service-btn" data-category="Makeup">Makeup</button></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Studio Inquiries & Socials -->
+        <div class="footer-col footer-col--contact">
+          <h4 class="footer-col-title">STUDIO INQUIRIES</h4>
+          <div class="footer-contact-details">
+            <div class="footer-contact-row">
+              <span class="footer-detail-label">DIRECT PHONE:</span>
+              <a href="tel:+917676763936" class="footer-detail-val">+91 7676763936</a>
+            </div>
+            <div class="footer-contact-row">
+              <span class="footer-detail-label">STUDIO BASE:</span>
+              <span class="footer-detail-val">Bengaluru, Karnataka, India</span>
+            </div>
+            <div class="footer-contact-row">
+              <span class="footer-detail-label">DESTINATIONS:</span>
+              <span class="footer-detail-val">Pan-India & International</span>
+            </div>
+          </div>
+
+          <div class="footer-social-row">
+            <a href="https://www.instagram.com/adrithimedia/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span>INSTAGRAM</span>
+            </a>
+            <a href="https://wa.me/917676763936" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.69C7.02 10.9 7.9 12.07 8.02 12.23C8.15 12.4 9.74 14.85 12.18 15.9C14.21 16.78 14.62 16.61 15.07 16.57C15.52 16.53 16.52 15.98 16.73 15.39C16.94 14.81 16.94 14.31 16.88 14.2C16.82 14.1 16.66 14.04 16.41 13.92C16.16 13.8 14.94 13.2 14.71 13.12C14.48 13.04 14.32 13 14.15 13.25C13.98 13.5 13.51 14.1 13.37 14.26C13.23 14.42 13.09 14.44 12.84 14.32C12.59 14.2 11.78 13.93 10.82 13.07C10.07 12.4 9.56 11.58 9.42 11.33C9.27 11.08 9.4 10.95 9.53 10.83C9.64 10.72 9.78 10.54 9.9 10.4C10.03 10.26 10.07 10.15 10.15 9.99C10.23 9.82 10.19 9.68 10.13 9.56C10.07 9.43 9.6 8.27 9.4 7.79C9.21 7.33 9.02 7.39 8.87 7.38C8.73 7.38 8.57 7.38 8.53 7.33Z"/>
+              </svg>
+              <span>WHATSAPP</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Colophon / Copyright Bar -->
+    <div class="footer-colophon">
+      <div class="footer-colophon__inner">
+        <p class="footer-copy">© 2026 ADRITHI MEDIA. ALL RIGHTS RESERVED.</p>
+        
+        <div class="footer-legal-links">
+          <button type="button" class="footer-legal-btn" data-legal="terms">Terms & Conditions</button>
+          <span class="legal-divider">•</span>
+          <button type="button" class="footer-legal-btn" data-legal="privacy">Privacy Policy</button>
+          <span class="legal-divider">•</span>
+          <button type="button" class="footer-legal-btn" data-legal="cookies">Cookies Permission</button>
+        </div>
+
+        <button type="button" class="footer-back-to-top" id="footerBackToTop" aria-label="Scroll back to top">
+          <span>BACK TO TOP</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       LEGAL DOCUMENT MODAL (TERMS, PRIVACY & COOKIES)
+       ======================================================================== -->
+  <div id="legalDocModal" class="legal-doc-modal" aria-hidden="true">
+    <div class="legal-modal-backdrop" id="legalModalBackdrop"></div>
+    <div class="legal-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="legalDocModalTitle">
+      <div class="legal-modal-topbar">
+        <div class="legal-modal-header-info">
+          <span class="legal-modal-eyebrow">LEGAL ARCHIVES & CLIENT PRIVACY</span>
+          <div class="legal-tab-triggers">
+            <button type="button" class="legal-tab-btn active" data-tab="terms">Terms & Conditions</button>
+            <button type="button" class="legal-tab-btn" data-tab="privacy">Privacy Policy</button>
+            <button type="button" class="legal-tab-btn" data-tab="cookies">Cookies Policy</button>
+          </div>
+        </div>
+        <button id="legalModalCloseBtn" class="modal-close-action" aria-label="Close Legal Document">
+          <span class="close-action-text">CLOSE</span>
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="square">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="legal-modal-body">
+        <!-- Tab 1: Terms & Conditions -->
+        <article id="legalTabTerms" class="legal-tab-content active">
+          <h2 id="legalDocModalTitle" class="legal-doc-title">Terms & Conditions of Service</h2>
+          <span class="legal-doc-updated">LAST REVISED: NOVEMBER 2026 • ADRITHI MEDIA</span>
+          
+          <div class="legal-section">
+            <h3 class="legal-section-title">1. Commissions & Reservation</h3>
+            <p>All photographic and cinematic assignments undertaken by Adrithi Media ("The Studio") require a formal booking confirmation and an agreed retainer deposit. Dates are reserved on a dedicated basis and cannot be guaranteed without receipt of the deposit agreement.</p>
+          </div>
+
+          <div class="legal-section">
+            <h3 class="legal-section-title">2. Artistic Style & Creative Discretion</h3>
+            <p>Clients acknowledge that Adrithi Media operates with an intentional fine-art, documentary, and cinematic editorial aesthetic. Lighting conditions, atmospheric tones, color palette grading, and artistic composition remain at the professional discretion of the principal artists.</p>
+          </div>
+
+          <div class="legal-section">
+            <h3 class="legal-section-title">3. Image Archiving & Delivery Timelines</h3>
+            <p>Curated highlight previews are typically made available within 7 to 14 days of an assignment. Complete master high-resolution archives undergo rigorous editorial post-production and are delivered via private cloud gallery within 4 to 8 weeks. Clients are advised to maintain redundant local copies of their delivered archives.</p>
+          </div>
+
+          <div class="legal-section">
+            <h3 class="legal-section-title">4. Copyright & Reproduction Rights</h3>
+            <p>Under statutory copyright law, all original negative files, raw media, and edited photographs produced by Adrithi Media remain the sole intellectual property of Adrithi Media. Clients receive a perpetual, non-exclusive license for personal, non-commercial reproduction, private printing, and digital sharing across personal networks.</p>
+          </div>
+
+          <div class="legal-section">
+            <h3 class="legal-section-title">5. Rescheduling & Unforeseen Circumstances</h3>
+            <p>In the event of event rescheduling due to weather, family emergencies, or force majeure events, The Studio will make every professional effort to accommodate alternate dates subject to existing calendar commitments.</p>
+          </div>
+        </article>
+
+        <!-- Tab 2: Privacy Policy -->
+        <article id="legalTabPrivacy" class="legal-tab-content">
+          <h2 class="legal-doc-title">Privacy & Data Governance Policy</h2>
+          <span class="legal-doc-updated">LAST REVISED: NOVEMBER 2026 • ADRITHI MEDIA</span>
+
+          <div class="legal-section">
+            <h3 class="legal-section-title">1. Collection of Client Information</h3>
+            <p>Adrithi Media collects necessary contact details (such as your name, telephone number, email address, event dates, and venue locations) solely to facilitate consultations, contract execution, and project coordination.</p>
+          </div>
+
+          <div class="legal-section">
+            <h3 class="legal-section-title">2. Archival Imagery & Portfolio Showcases</h3>
+            <p>We respect client discretion and privacy above all. Portfolio displays on our website, social media chronicles, and archival previews celebrate authentic artistic work and are published with client awareness and consent. If you require private or embargoed coverage for high-profile weddings or ceremonies, please notify our studio team during booking.</p>
+          </div>
+
+          <div class="legal-section">
+            <h3 class="legal-section-title">3. Data Protection & Zero Third-Party Sharing</h3>
+            <p>We do not sell, rent, monetize, or disclose client personal information or unreleased photographs to third-party advertisers or unauthorized external brokers. Data is handled strictly within secure SSL-encrypted cloud storage and internal production workflows.</p>
+          </div>
+
+          <div class="legal-section">
+            <h3 class="legal-section-title">4. Your Access & Rectification Rights</h3>
+            <p>Clients may at any time request an inventory of their personal details stored with us, request updates to their contact records, or inquire about their archival storage by reaching out via our direct contact channels.</p>
+          </div>
+        </article>
+
+        <!-- Tab 3: Cookies Policy & Preferences -->
+        <article id="legalTabCookies" class="legal-tab-content">
+          <h2 class="legal-doc-title">Cookie Permission & Web Technologies</h2>
+          <span class="legal-doc-updated">LAST REVISED: NOVEMBER 2026 • ADRITHI MEDIA</span>
+
+          <div class="legal-section">
+            <h3 class="legal-section-title">1. Why We Use Cookies</h3>
+            <p>Cookies and local browser storage are utilized on this site solely to enhance your viewing experience, preserve responsive layout preferences, ensure smooth full-screen image transitions, and optimize high-resolution gallery caching without requiring re-downloads.</p>
+          </div>
+
+          <div class="legal-section">
+            <h3 class="legal-section-title">2. Types of Cookies Used</h3>
+            <ul class="legal-cookie-list">
+              <li><strong>Essential Session Data:</strong> Necessary for navigation, secure modal transitions, and responsive screen scaling.</li>
+              <li><strong>Performance & Fluid Cache:</strong> Minimizes server latency by remembering recently viewed photography sleeves and thumbnails.</li>
+              <li><strong>Consent Token:</strong> Remembers your decision regarding cookie permissions so you are not prompted repeatedly.</li>
+            </ul>
+          </div>
+
+          <div class="legal-section">
+            <h3 class="legal-section-title">3. Manage Your Preferences</h3>
+            <p>You can adjust or revoke your cookie consent at any time. When you choose to accept, all performance optimizations are enabled. If you decline, only non-tracking essential session variables will operate.</p>
+            <div class="cookie-preference-actions">
+              <button type="button" class="cookie-manage-btn" id="cookieAcceptFromModal">ACCEPT ALL COOKIES</button>
+              <button type="button" class="cookie-manage-btn cookie-manage-btn--outline" id="cookieResetFromModal">REVOKE CONSENT & RESET</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       FLOATING COOKIE PERMISSION CONSENT BAR
+       ======================================================================== -->
+  <aside id="cookieConsentBanner" class="cookie-consent-bar" role="region" aria-label="Cookie Permission Notice">
+    <div class="cookie-consent-bar__inner">
+      <div class="cookie-consent-text">
+        <span class="cookie-consent-eyebrow">PRIVACY & COOKIES NOTICE</span>
+        <p class="cookie-consent-desc">
+          We use essential cookies and caching to optimize high-resolution gallery playback and personalize your viewing experience in accordance with our <button type="button" class="cookie-link-btn" data-legal="privacy">Privacy Policy</button> & <button type="button" class="cookie-link-btn" data-legal="cookies">Cookies Policy</button>.
+        </p>
+      </div>
+      <div class="cookie-consent-actions">
+        <button type="button" id="cookieAcceptBtn" class="cookie-btn cookie-btn--primary">ACCEPT ALL</button>
+        <button type="button" id="cookieDeclineBtn" class="cookie-btn cookie-btn--ghost">DECLINE</button>
+      </div>
+    </div>
+  </aside>
+
+
+  <!-- Category Gallery Modal (Pure Visual Fluid Gallery) -->
+  <div id="categoryGalleryModal" class="category-gallery-modal" aria-hidden="true" style="display: none;">
+    <div class="gallery-modal-backdrop" id="galleryModalBackdrop"></div>
+    <div class="gallery-modal-dialog">
+      <div class="gallery-modal-topbar">
+        <div class="gallery-modal-header-info">
+          <span class="gallery-modal-eyebrow">ARCHIVAL PORTFOLIO</span>
+          <div class="gallery-modal-title-row">
+            <h3 class="gallery-modal-title" id="galleryModalTitle">Gallery</h3>
+            <span class="gallery-modal-count-badge" id="galleryModalCount">Photographs</span>
+          </div>
+        </div>
+        <!-- Sleek Top-Right Exit Action -->
+        <button id="galleryModalCloseBtn" class="modal-close-action" aria-label="Exit Gallery" title="Close Gallery">
+          <span class="close-action-text">CLOSE</span>
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="square">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="gallery-modal-content">
+        <!-- Fluid Masonry Grid (Zero Prescribed Size Clipping — Fully Responsive) -->
+        <div class="masonry-fluid" id="galleryModalGrid">
+          <!-- Populated dynamically with pure fluid images -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Full-Size Image Lightbox Overlay (Pure Imagery — No Footer Text) -->
+  <div id="masonryLightbox" class="masonry-lightbox" role="dialog" aria-modal="true" style="display: none;">
+    <div class="masonry-lightbox__backdrop" id="lightboxBackdrop"></div>
+    <div class="masonry-lightbox__loader" id="lightboxLoader"></div>
+    <img class="masonry-lightbox__image" id="lightboxImage" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Full size photograph" draggable="false" referrerpolicy="no-referrer">
+
+    <!-- Exit Button -->
+    <button type="button" class="masonry-lightbox__button masonry-lightbox__close" id="lightboxCloseBtn" aria-label="Close Full Size View">
+      <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="square">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <!-- Left Navigation Button (Pure floating arrow) -->
+    <button type="button" class="masonry-lightbox__nav-btn masonry-lightbox__prev" id="lightboxPrevBtn" aria-label="Previous Photo">
+      <svg viewBox="0 0 24 24" width="36" height="36" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+
+    <!-- Right Navigation Button (Pure floating arrow) -->
+    <button type="button" class="masonry-lightbox__nav-btn masonry-lightbox__next" id="lightboxNextBtn" aria-label="Next Photo">
+      <svg viewBox="0 0 24 24" width="36" height="36" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+  </div>
+
+  <!-- GSAP 3 Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- JavaScript -->
+  <script src="drive_images.js"></script>
+  <script src="app.js?v=6.0"></script>
+
+  <!-- Service Worker Cleanup & Live Cache-Clear Controller -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(regs) {
+        for (var i = 0; i < regs.length; i++) {
+          regs[i].unregister();
+        }
+      });
+    }
+    if ('caches' in window) {
+      caches.keys().then(function(keys) {
+        for (var i = 0; i < keys.length; i++) {
+          caches.delete(keys[i]);
+        }
+      });
+    }
+  </script>
+
+  <!-- Legal & Cookie Direct Controller (Zero-cache guarantee) -->
+  <script>
+    (function() {
+      function switchTab(tab) {
+        tab = tab || 'terms';
+        document.querySelectorAll('.legal-tab-btn').forEach(function(b) {
+          b.classList.toggle('active', b.getAttribute('data-tab') === tab);
+        });
+        var map = { terms: 'legalTabTerms', privacy: 'legalTabPrivacy', cookies: 'legalTabCookies' };
+        Object.keys(map).forEach(function(k) {
+          var el = document.getElementById(map[k]);
+          if (!el) return;
+          var isMatch = (k === tab);
+          el.classList.toggle('active', isMatch);
+          el.style.display = isMatch ? 'flex' : 'none';
+        });
+        var body = document.querySelector('.legal-modal-body');
+        if (body) body.scrollTop = 0;
+      }
+
+      window.openLegalModal = function(tab) {
+        var modal = document.getElementById('legalDocModal');
+        if (!modal) return;
+        switchTab(tab);
+        modal.style.display = 'flex';
+        modal.classList.add('is-active');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      };
+
+      window.closeLegalModal = function() {
+        var modal = document.getElementById('legalDocModal');
+        if (!modal) return;
+        modal.classList.remove('is-active');
+        modal.style.display = 'none';
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      };
+
+      window.showCookieBanner = function() {
+        var bar = document.getElementById('cookieConsentBanner');
+        if (!bar) return;
+        bar.style.display = 'block';
+        bar.classList.add('is-visible');
+      };
+
+      window.hideCookieBanner = function() {
+        var bar = document.getElementById('cookieConsentBanner');
+        if (!bar) return;
+        bar.classList.remove('is-visible');
+        setTimeout(function() { bar.style.display = 'none'; }, 350);
+      };
+
+      document.addEventListener('click', function(e) {
+        var trigger = e.target.closest('[data-legal]');
+        if (trigger) {
+          e.preventDefault();
+          var t = trigger.getAttribute('data-legal');
+          window.openLegalModal(t);
+          if (t === 'cookies') window.showCookieBanner();
+          return;
+        }
+
+        var tabBtn = e.target.closest('.legal-tab-btn');
+        if (tabBtn) {
+          e.preventDefault();
+          switchTab(tabBtn.getAttribute('data-tab'));
+          return;
+        }
+
+        if (e.target.closest('#legalModalCloseBtn') || e.target.id === 'legalModalBackdrop') {
+          e.preventDefault();
+          window.closeLegalModal();
+          return;
+        }
+
+        if (e.target.closest('#cookieAcceptBtn') || e.target.closest('#cookieAcceptFromModal')) {
+          e.preventDefault();
+          try { localStorage.setItem('adrithi_cookie_consent', 'accepted'); } catch(err){}
+          window.hideCookieBanner();
+          if (e.target.closest('#cookieAcceptFromModal')) window.closeLegalModal();
+          return;
+        }
+
+        if (e.target.closest('#cookieDeclineBtn')) {
+          e.preventDefault();
+          try { localStorage.setItem('adrithi_cookie_consent', 'declined'); } catch(err){}
+          window.hideCookieBanner();
+          return;
+        }
+
+        if (e.target.closest('#cookieResetFromModal')) {
+          e.preventDefault();
+          try { localStorage.removeItem('adrithi_cookie_consent'); } catch(err){}
+          window.closeLegalModal();
+          setTimeout(window.showCookieBanner, 300);
+          return;
+        }
+      });
+
+      // Show floating cookie banner only after user scrolls past hero
+      try {
+        if (!localStorage.getItem('adrithi_cookie_consent')) {
+          var onScrollBanner = function() {
+            if (window.scrollY > 200) {
+              window.showCookieBanner();
+              window.removeEventListener('scroll', onScrollBanner);
+            }
+          };
+          window.addEventListener('scroll', onScrollBanner, { passive: true });
+        }
+      } catch(err) {}
+    })();
+  </script>
+
+  <!-- Floating WhatsApp Concierge Button -->
+  <a href="https://wa.me/917676763936?text=Hello%20Adrithi%20Media%2C%20I%20would%20like%20to%20inquire%20about%20booking%20your%20photography%20and%20cinematography%20services." 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="whatsapp-float-btn" 
+     aria-label="Chat with Adrithi Media on WhatsApp">
+    <span class="whatsapp-float-tooltip">Chat with Studio</span>
+    <div class="whatsapp-float-icon">
+      <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.69C7.02 10.9 7.9 12.07 8.02 12.23C8.15 12.4 9.74 14.85 12.18 15.9C14.21 16.78 14.62 16.61 15.07 16.57C15.52 16.53 16.52 15.98 16.73 15.39C16.94 14.81 16.94 14.31 16.88 14.2C16.82 14.1 16.66 14.04 16.41 13.92C16.16 13.8 14.94 13.2 14.71 13.12C14.48 13.04 14.32 13 14.15 13.25C13.98 13.5 13.51 14.1 13.37 14.26C13.23 14.42 13.09 14.44 12.84 14.32C12.59 14.2 11.78 13.93 10.82 13.07C10.07 12.4 9.56 11.58 9.42 11.33C9.27 11.08 9.4 10.95 9.53 10.83C9.64 10.72 9.78 10.54 9.9 10.4C10.03 10.26 10.07 10.15 10.15 9.99C10.23 9.82 10.19 9.68 10.13 9.56C10.07 9.43 9.6 8.27 9.4 7.79C9.21 7.33 9.02 7.39 8.87 7.38C8.73 7.38 8.57 7.38 8.53 7.33Z"/>
+      </svg>
+    </div>
+    <div class="whatsapp-pulse-ring"></div>
+  </a>
+
+</body>
+</html>
