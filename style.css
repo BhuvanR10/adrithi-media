@@ -1313,24 +1313,53 @@ button, .btn, [class*="-btn"], [class*="-button"] {
 
 @media (max-width: 640px) {
   .services-artsy-section {
-    padding: 72px 0 80px;
+    padding: 60px 0 68px;
   }
   .services-artsy-container {
-    padding: 0 20px;
+    padding: 0 16px;
   }
   .services-artsy-header {
-    margin-bottom: 36px;
+    margin-bottom: 28px;
+  }
+  .services-artsy-eyebrow {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    margin-bottom: 8px;
   }
   .services-artsy-headline {
-    font-size: clamp(1.15rem, 4.6vw, 1.38rem);
-    line-height: 1.28;
+    font-size: clamp(1.2rem, 5vw, 1.45rem);
+    line-height: 1.24;
   }
   .services-artsy-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .artsy-tile {
+    border-radius: 2px;
+  }
+  .artsy-tile-caption {
+    padding: 24px 12px 14px;
+    gap: 2px;
+  }
+  .artsy-tile-number {
+    font-size: 9.5px;
+    letter-spacing: 0.18em;
+    opacity: 0.85;
+  }
+  .artsy-tile-title {
+    font-size: clamp(0.95rem, 3.6vw, 1.15rem);
+    line-height: 1.18;
   }
   .services-artsy-footer {
-    margin-top: 40px;
+    margin-top: 32px;
+  }
+  .artsy-btn-primary {
+    padding: 12px 24px;
+    font-size: 10.5px;
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+    box-sizing: border-box;
   }
 }
 
