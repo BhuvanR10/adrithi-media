@@ -27,7 +27,7 @@
 .page-wrapper {
   width: 100%;
   min-height: 100vh;
-  background-color: #FFFFFF;
+  background-color: #DFE3E8;
   color: #0A0C0E;
   position: relative;
   overflow-x: hidden;
@@ -41,10 +41,10 @@
   position: relative;
   width: 100%;
   background: 
-    radial-gradient(circle at 88% 22%, rgba(14, 165, 233, 0.08) 0%, transparent 45%),
-    radial-gradient(circle at 12% 82%, rgba(14, 165, 233, 0.04) 0%, transparent 38%),
-    linear-gradient(180deg, #F0F3F7 0%, #F8FAFC 55%, #FFFFFF 100%);
-  border-bottom: 1px solid rgba(10, 12, 14, 0.08);
+    radial-gradient(circle at 88% 22%, rgba(14, 165, 233, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 12% 82%, rgba(14, 165, 233, 0.06) 0%, transparent 38%),
+    linear-gradient(180deg, #D0D7E2 0%, #D9DFE8 55%, #DFE3E8 100%);
+  border-bottom: 1px solid rgba(10, 12, 14, 0.12);
   overflow: hidden;
 }
 
@@ -128,9 +128,9 @@
    STUDIO ACCREDITATION & CREDENTIALS BAR (CLEAN EDITORIAL STRIP)
    ========================================================================== */
 .trust-ribbon {
-  background: #FAFAFA;
-  border-top: 1px solid rgba(10, 12, 14, 0.06);
-  border-bottom: 1px solid rgba(10, 12, 14, 0.06);
+  background: #D6DCE3;
+  border-top: 1px solid rgba(10, 12, 14, 0.08);
+  border-bottom: 1px solid rgba(10, 12, 14, 0.08);
   padding: 16px 32px;
 }
 
@@ -241,8 +241,9 @@
   aspect-ratio: 4 / 5;
   border-radius: 4px;
   overflow: hidden;
-  background: #F4F4F5;
-  border: 1px solid rgba(10, 12, 14, 0.08);
+  background: #D4DAE2;
+  border: 1px solid rgba(10, 12, 14, 0.12);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
 }
 
 .manifesto-media-img {
@@ -267,9 +268,9 @@
    ========================================================================== */
 .principles-section {
   padding: 88px 32px;
-  background-color: #FAFAFA;
-  border-top: 1px solid rgba(10, 12, 14, 0.06);
-  border-bottom: 1px solid rgba(10, 12, 14, 0.06);
+  background-color: #D6DCE3;
+  border-top: 1px solid rgba(10, 12, 14, 0.08);
+  border-bottom: 1px solid rgba(10, 12, 14, 0.08);
 }
 
 .section-container {
@@ -506,7 +507,7 @@
    ========================================================================== */
 .albums-craft-section {
   padding: 96px 32px;
-  background: #FFFFFF;
+  background: #DFE3E8;
 }
 
 .albums-craft-grid {
@@ -593,24 +594,25 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: transparent;
+  background: #FFFFFF;
   color: #0A0C0E;
   border: 1px solid rgba(10, 12, 14, 0.2);
   padding: 14px 26px;
   font-family: var(--font-button);
   font-size: 0.82rem;
-  font-weight: 400;
-  letter-spacing: 0.14em;
+  font-weight: 500;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   transition: all 0.2s ease;
 }
 
 .albums-btn-secondary:hover {
   border-color: var(--brand-blue, #0EA5E9);
   color: var(--brand-blue-deep, #0284C7);
-  background: rgba(14, 165, 233, 0.04);
+  background: #FFFFFF;
 }
 
 /* ==========================================================================
@@ -618,9 +620,9 @@
    ========================================================================== */
 .process-section {
   padding: 96px 32px;
-  background-color: #FAFAFA;
-  border-top: 1px solid rgba(10, 12, 14, 0.06);
-  border-bottom: 1px solid rgba(10, 12, 14, 0.06);
+  background-color: #D6DCE3;
+  border-top: 1px solid rgba(10, 12, 14, 0.08);
+  border-bottom: 1px solid rgba(10, 12, 14, 0.08);
 }
 
 .process-steps-grid {
@@ -631,13 +633,14 @@
 
 .step-card {
   background: #FFFFFF;
-  border: 1px solid rgba(10, 12, 14, 0.08);
+  border: 1px solid rgba(10, 12, 14, 0.10);
   border-radius: 4px;
   padding: 36px 28px;
   display: flex;
   flex-direction: column;
   gap: 14px;
   position: relative;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
   transition: transform 0.25s ease;
 }
 
@@ -675,7 +678,7 @@
    ========================================================================== */
 .testimonials-section {
   padding: 96px 32px;
-  background: #FFFFFF;
+  background: #DFE3E8;
 }
 
 .testimonials-grid {
@@ -685,14 +688,15 @@
 }
 
 .testimonial-card {
-  background: #FAFAFA;
-  border: 1px solid rgba(10, 12, 14, 0.08);
+  background: #FFFFFF;
+  border: 1px solid rgba(10, 12, 14, 0.10);
   border-radius: 4px;
   padding: 40px 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 24px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
 }
 
 .quote-text {
@@ -812,7 +816,7 @@
    ========================================================================== */
 .services-catalog-section {
   padding-top: 56px;
-  background: #FFFFFF;
+  background: #DFE3E8;
 }
 
 .services-filter-wrapper {
@@ -830,15 +834,16 @@
 
 .filter-btn {
   background: #FFFFFF;
-  border: 1px solid rgba(10, 12, 14, 0.12);
+  border: 1px solid rgba(10, 12, 14, 0.14);
   padding: 10px 20px;
   border-radius: 2px;
   font-family: var(--font-subtitle);
   font-size: 0.8rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.06em;
-  color: #52525B;
+  color: #18181B;
   cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
   transition: all 0.2s ease;
 }
 
@@ -865,11 +870,12 @@
 
 .service-card-deep {
   background: #FFFFFF;
-  border: 1px solid rgba(10, 12, 14, 0.09);
+  border: 1px solid rgba(10, 12, 14, 0.10);
   border-radius: 4px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -1070,7 +1076,8 @@
    ========================================================================== */
 .faq-section {
   padding: 96px 32px;
-  background: #FFFFFF;
+  background: #D6DCE3;
+  border-top: 1px solid rgba(10, 12, 14, 0.08);
 }
 
 .faq-accordion {
@@ -1082,11 +1089,12 @@
 }
 
 .faq-item {
-  border: 1px solid rgba(10, 12, 14, 0.09);
+  border: 1px solid rgba(10, 12, 14, 0.10);
   border-radius: 4px;
   background: #FFFFFF;
   overflow: hidden;
-  transition: border-color 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .faq-item.active {
@@ -1157,9 +1165,10 @@
 
 .contact-form-card {
   background: #FFFFFF;
-  border: 1px solid rgba(10, 12, 14, 0.09);
+  border: 1px solid rgba(10, 12, 14, 0.10);
   border-radius: 4px;
   padding: 48px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
 }
 
 .form-header-badge {
@@ -1219,8 +1228,8 @@
 .form-select,
 .form-textarea {
   width: 100%;
-  background: #FAFAFA;
-  border: 1px solid rgba(10, 12, 14, 0.15);
+  background: #F4F6F8;
+  border: 1px solid rgba(10, 12, 14, 0.18);
   border-radius: 2px;
   padding: 14px 16px;
   font-family: var(--font-paragraph);
@@ -1252,8 +1261,8 @@
 }
 
 .budget-btn {
-  background: #FAFAFA;
-  border: 1px solid rgba(10, 12, 14, 0.12);
+  background: #F4F6F8;
+  border: 1px solid rgba(10, 12, 14, 0.14);
   border-radius: 2px;
   padding: 14px 16px;
   cursor: pointer;
@@ -1356,8 +1365,8 @@
 }
 
 .contact-direct-card {
-  background: #FAFAFA;
-  border: 1px solid rgba(10, 12, 14, 0.08);
+  background: #FFFFFF;
+  border: 1px solid rgba(10, 12, 14, 0.10);
   border-radius: 4px;
   padding: 28px 24px;
   display: flex;
@@ -1365,14 +1374,15 @@
   gap: 18px;
   text-decoration: none;
   color: inherit;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
   transition: all 0.2s ease;
 }
 
 .contact-direct-card:hover {
   background: #FFFFFF;
-  border-color: rgba(14, 165, 233, 0.4);
+  border-color: rgba(14, 165, 233, 0.45);
   transform: translateY(-2px);
-  box-shadow: 0 14px 32px -8px rgba(14, 165, 233, 0.16);
+  box-shadow: 0 14px 32px -8px rgba(14, 165, 233, 0.18);
 }
 
 .contact-card-icon {
@@ -1475,13 +1485,14 @@
 }
 
 .privacy-commitment-card {
-  background: #FAFAFA;
-  border: 1px solid rgba(10, 12, 14, 0.08);
+  background: #FFFFFF;
+  border: 1px solid rgba(10, 12, 14, 0.10);
   border-radius: 4px;
   padding: 24px 28px;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
 }
 
 .privacy-card-title {
